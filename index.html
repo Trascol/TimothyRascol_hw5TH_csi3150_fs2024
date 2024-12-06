@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Used Car Sales Interface</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <header>
+      <h1>Used Cars Dealership</h1>
+    </header>
+
+    <section class="filters">
+      <h2>Filter Options</h2>
+      <form id="filterForm">
+        <label for="minYear">Min Year:</label>
+        <input type="number" id="minYear" placeholder="e.g. 2005">
+        
+        <label for="maxYear">Max Year:</label>
+        <input type="number" id="maxYear" placeholder="e.g. 2020">
+        
+        <label for="makes">Make:</label>
+        <select id="makes" multiple>
+          <option value="Toyota">Toyota</option>
+          <option value="Ford">Ford</option>
+          <option value="Nissan">Nissan</option>
+          <option value="Honda">Honda</option>
+          <option value="Chevrolet">Chevrolet</option>
+        </select>
+        
+        <label for="maxMileage">Max Mileage:</label>
+        <input type="number" id="maxMileage" placeholder="e.g. 30000">
+        
+        <label for="minPrice">Min Price:</label>
+        <input type="number" id="minPrice" placeholder="e.g. 5000">
+        
+        <label for="maxPrice">Max Price:</label>
+        <input type="number" id="maxPrice" placeholder="e.g. 25000">
+        
+        <label for="colors">Color:</label>
+        <select id="colors" multiple>
+          <option value="Red">Red</option>
+          <option value="White">White</option>
+          <option value="Black">Black</option>
+          <option value="Silver">Silver</option>
+          <option value="Blue">Blue</option>
+        </select>
+
+        <button type="button" id="applyFilters">Apply Filters</button>
+      </form>
+    </section>
+
+    <section class="car-list" id="carList">
+      
+    </section>
+
+    <script src="js/data.js"></script>
+    <script src="js/script.js"></script>
+
+    <footer>
+      <hr>
+      <h3>Contact me</h3>
+      <ul>
+        <li>Email: <a href="mailto:trascol@oakland.edu">trascol@oakland.edu</a></li>
+        <li>Github: <a href="https://github.com/Trascol" target="_blank">Trascol</a></li>
+      </ul>
+      <p>&copy; 2024 by Timothy Rascol</p>
+    </footer>
+  </body>
+</html>
